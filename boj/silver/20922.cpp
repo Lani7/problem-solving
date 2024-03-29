@@ -27,13 +27,11 @@ int main()
     }
     else if (num[a[end]] >= k)
     {
-      count = end - start;
       num[a[start]]--;
       start++;
-      result = max(count, result);
     }
+    count = end - start;
+    result = max(count, result);
   }
-  count = end - start;
-  result = max(count, result);
-  cout << result << "\n";
+  cout << result;
 }
