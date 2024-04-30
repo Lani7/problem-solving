@@ -47,7 +47,7 @@ void merge(int a[], int tmp[], int left, int mid, int right)
   {
     if (tmp[index1] > tmp[index2])
     {
-      // 뒤쪽 값이 작은 경우 현재 남아있는 앞쪽 데이터 개수만큼 더함
+      // 뒤쪽 값이 작은 경우 현재 남아있는 앞쪽 데이터 개수만큼 더함(swap 횟수)
       result = result + index2 - k;
       a[k++] = tmp[index2++];
     }
